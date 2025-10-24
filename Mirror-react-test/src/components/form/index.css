@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+.box {
+    display: flex;
+    justify-content: center;
+    width: 593px;
+    height: 720px;
+    flex-shrink: 0;
+    background-color: #03092D;
+    color: white;
+    border: #1100FF 1px solid;
+}
+
+.cadastrar__title {
+    display: flex;
+    justify-content: center;
+    font-family: "IBM Plex Mono";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 40px;
+    line-height: 100%;
+    padding-top: 45px;
+    padding-bottom: 45px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.form input {
+    width: 443px;
+    height: 60px;
+    border-radius: 5px;
+    border-width: 1px;
+    margin-bottom: 16px;
+    background-position: 20px center;
+    background-position-y: 15px;
+    background-size: 25px 25px;
+    align-self: flex-start;
+    font-family: "IBM Plex Mono";
+    font-size: 20px;
+    font-weight: 400;
+    color: black;
+    padding-left: 60px;
+}
+
+.form input::placeholder {
+    color: #BEB9B9;
+    font-family: "IBM Plex Mono";
+    font-size: 20px;
+    font-weight: 400;
+    font-style: regular;
+    letter-spacing: 20%;
+    line-height: 100%;
+    padding-top: 18px;
+}
+
+.title__form {
+    font-family: "IBM Plex Mono";
+    font-size: 24px;
+    font-style: regular;
+    font-weight: 400;
+    margin-bottom: 10px;
+    align-self: flex-start;
+}
+
+.input__name {
+    background-image: url('../../assets/user-icon.svg');
+    background-repeat: no-repeat;
+
+}
+
+.input__email {
+    background-image: url('../../assets/email-icon.svg');
+    background-repeat: no-repeat;
+}
+
+.input__senha {
+    background-image: url('../../assets/password-icon.svg');
+    background-repeat: no-repeat;
+}
+
+
+.btn__cadastrar {
+    margin-top: 60px;
+    width: 250px;
+    height: 80px;
+    flex-shrink: 0;
+    border-radius: 5px;
+    background: linear-gradient(180deg, #0C1E98 0.4%, #0E1548 99.6%);
+    color: white;
+    border-bottom-style: none;
+    border-style: none;
+    color: #FFF;
+    font-family: "IBM Plex Mono";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 4.8px;
+}
+
+.btn__cadastrar:hover {
+    background: linear-gradient(180deg, #061257 0.4%, #0a0f30 99.6%);
+}
+
+.btn__cadastrar:active {
+    background: linear-gradient(180deg, #000a77 0.4%, #0213918c 99.6%);
+}
+
+/* Responsividade do Form */
+@media (max-width: 768px) {
+    .box {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+        padding: 20px;
+    }
+    
+    .form input {
+        width: 100%;
+        max-width: 400px;
+    }
+    
+    .cadastrar__title {
+        font-size: 32px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        max-width: 100%;
+        border: none;
+    }
+    
+    .form input {
+        max-width: 100%;
+        height: 50px;
+        font-size: 16px;
+        padding-left: 50px;
+    }
+    
+    .cadastrar__title {
+        font-size: 28px;
+    }
+    
+    .title__form {
+        font-size: 20px;
+    }
+    
+    .btn__cadastrar {
+        width: 200px;
+        height: 60px;
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,141 @@
+.register {
+    position: relative;
+    border: 1px solid #000;
+    background: linear-gradient(114deg, #03092D 34.04%, #0A1D93 98.52%);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    min-height: 58.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 76px 40px;
+}
+
+.register__content {
+    display: flex;
+    align-items: flex-start;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.register__logo {
+    flex-shrink: 0;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    transition: all 0.3s ease;
+}
+
+.logo__image {
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+}
+
+.register__form {
+    flex-shrink: 0;
+    margin: 0 auto;
+}
+
+
+@media (max-width: 1610px) {
+    .register__logo {
+        left: 150px;
+    }
+}
+
+@media (max-width: 1510px) {
+    .register__logo {
+        left: 120px;
+        top: 180px;
+    }
+
+    .logo__image {
+        width: 260px;
+    }
+}
+
+@media (max-width: 1370px) {
+    .register__logo {
+        left: 80px;
+        top: 170px;
+    }
+
+    .logo__image {
+        width: 230px;
+    }
+}
+
+@media (max-width: 1230px) {
+    .register__logo {
+        left: 50px;
+        top: 160px;
+    }
+
+    .logo__image {
+        width: 200px;
+    }
+}
+
+@media (max-width: 1110px) {
+    .register {
+        padding: 40px 20px;
+    }
+
+    .register__content {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    .register__logo {
+        position: static;
+        margin-bottom: 0;
+    }
+
+    .logo__image {
+        width: 200px;
+    }
+
+    .register__form {
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .register {
+        min-height: auto;
+        padding: 30px 15px;
+    }
+
+    .register__content {
+        gap: 30px;
+    }
+
+    .logo__image {
+        width: 160px;
+    }
+}
+
+@media (max-width: 600px) {
+    .register__content {
+        gap: 25px;
+    }
+
+    .logo__image {
+        width: 140px;
+    }
+}
+
+@media (max-width: 480px) {
+    .register {
+        padding: 20px 10px;
+    }
+
+    .register__content {
+        gap: 20px;
+    }
+
+    .logo__image {
+        width: 120px;
+    }
+}

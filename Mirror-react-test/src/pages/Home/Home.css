@@ -1,0 +1,5 @@
+.home {
+    border: 1px solid #000;
+    background: linear-gradient(114deg, #03092D 34.04%, #0A1D93 98.52%);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
